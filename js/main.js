@@ -21,8 +21,8 @@ var values  = [
     {value:33, label:'A' },
     {value:33, label:'B' },
     {value:33, label:'C' },
-    {value:33, label:'D' },
-    {value:33, label:'E' }
+    //{value:33, label:'D' },
+    //{value:33, label:'E' }
 ];
 var total = 0;
 var dragging = null;
@@ -64,7 +64,7 @@ function drawHandles(){
     join.enter()
         .append('circle').attr({
             r:10,
-            'class':'handle'
+            'class':'handle',
         }).on("mouseover", function(){
             d3.select(this).classed('active',true);
         })
