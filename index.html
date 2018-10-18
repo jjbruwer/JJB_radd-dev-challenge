@@ -19,7 +19,7 @@
   <body>
 
     <nav class="navbar navbar-expand-md fixed-top">
-      <span class="navbar-brand">RADD</span>
+      <span class="navbar-brand" title="RADD">RADD</span>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <img src="img/menu-button-of-three-lines.svg" alt="Menu" />
       </button>
@@ -31,6 +31,9 @@
           <li class="nav-item">
             <a class="nav-link" href="https://www.linkedin.com/in/jjbruwer/" target="_blank" title="LinkedIn - JJ Bruwer">LinkedIn - JJ Bruwer</a>
           </li>
+          <li class="nav-item">
+            <span id="formValue"></span>
+          </li>          
         </ul>
       </div>
     </nav>
@@ -52,23 +55,32 @@
               <li>Design</li>
               <li>Development</li>
             </ul>
+            <p>Fill in the form below and the nav bar will be updated.</p>
             <hr class="featurette-divider">
             <form>
               <div class="form-group">
                 <label for="fName">First name</label>
-                <input type="text" class="form-control col-lg-8 col-12" id="fName" placeholder="Enter first name here..." tabindex="1" />
+                <input type="text" class="form-control col-lg-8 col-12" id="fName" placeholder="Enter first name here..." tabindex="1" required />
+                <div class="valid-feedback">Correct details</div>
+                <div class="invalid-feedback">Incorrect details</div>
               </div>
               <div class="form-group">
                 <label for="lName">Last name</label>
-                <input type="text" class="form-control col-lg-8 col-12" id="lName" placeholder="Enter first name here..." tabindex="2" />
+                <input type="text" class="form-control col-lg-8 col-12" id="lName" placeholder="Enter first name here..." tabindex="2" required />
+                <div class="valid-feedback">Correct details</div>
+                <div class="invalid-feedback">Incorrect details</div>
               </div>
               <div class="form-group">
                 <label for="mobile">Mobile number</label>
-                <input type="tel" class="form-control col-lg-4 col-12" id="mobile" placeholder="Enter email here..." tabindex="3" />
+                <input type="tel" class="form-control col-lg-4 col-12" id="mobile" placeholder="Enter email here..." tabindex="3" required />
+                <div class="valid-feedback">Correct mobile input</div>
+                <div class="invalid-feedback">Incorrect mobile input</div>
               </div>
               <div class="form-group">
                 <label for="dob">Date of birth</label>
-                <input type="date" class="form-control col-lg-4 col-12" id="dob" tabindex="4" />
+                <input type="date" class="form-control col-lg-4 col-12" id="dob" tabindex="4" required />
+                <div class="valid-feedback">Correct date input</div>
+                <div class="invalid-feedback">Incorrect date input</div>
               </div>
               <div class="text-right">
                 
@@ -86,19 +98,19 @@
             <div class="segment">
               <div class="segment1">
                 2021<br />
-                <small>(Financial Segment)</small>
+                <small>(Growth point 4)</small>
               </div>
               <div class="segment2">
                 2018<br />
-                <small>(Financial Segment)</small>
+                <small>(Growth point 1)</small>
               </div>
               <div class="segment3">
                 2019<br />
-                <small>(Financial Segment)</small>
+                <small>(Growth point 2)</small>
               </div>
               <div class="segment4">
                 2020<br />
-                <small>(Financial Segment)</small>
+                <small>(Growth point 3)</small>
               </div>
             </div>
 
@@ -127,8 +139,10 @@
 
     <script src="js/jquery-3.3.1.slim.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
     <script src="js/d3.v3.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/validator.js"></script>
     <!--<script src="../../assets/js/vendor/popper.min.js"></script>
     <script src="../../assets/js/vendor/holder.min.js"></script>-->
   </body>

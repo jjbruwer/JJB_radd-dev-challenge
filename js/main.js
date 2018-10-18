@@ -1,4 +1,6 @@
-// Form session storage
+/* 
+ Form session storage 
+*/
 var firstNameF = document.getElementById("fName"),
     lastNameF = document.getElementById("lName"),
     mobileF = document.getElementById("mobile"),
@@ -16,7 +18,14 @@ clear.addEventListener("click", function(e){
     window.sessionStorage.clear();
 }, true);
 
-/* circular drag path starts */
+/*
+ Display form values
+*/
+document.getElementById('formValue').innerHTML = window.sessionStorage["fieldval"];
+
+/*
+ circular drag path starts 
+ */
 var values  = [
     {value:33, label:'A' },
     {value:33, label:'B' },

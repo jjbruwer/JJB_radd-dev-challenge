@@ -102,6 +102,11 @@ nav {
 .nav-item.active a {
 	color: #fff;
 }
+
+#formValue {
+	padding: .5rem 1rem;
+	display: block;
+}
 /* top nav ends */
 
 /* form starts */
@@ -119,6 +124,14 @@ input {
     color: #999;
     background-color: transparent;
     border-color: transparent;
+}
+
+.valid-feedback {
+	color: #008B00;
+}
+
+.invalid-feedback {
+	color: #CD0000;
 }
 /* form ends */
 
@@ -176,6 +189,12 @@ input {
     color: #fff;
     font-weight: 600;
 }
+.segment1 small,
+.segment2 small,
+.segment3 small,
+.segment4 small {
+	font-size: 0.625em;
+}
 
 .segment1 {
 	border-top-left-radius: 150px;
@@ -198,7 +217,7 @@ input {
 .segment3 {
 	border-bottom-left-radius: 150px;
 	float: left;
-	padding: 20px 0px 0px 40px;
+	padding: 30px 0px 0px 40px;
 	border-color: #ff4040;
 	border-right: none;
 	border-top: none;
@@ -207,7 +226,7 @@ input {
 .segment4 {
 	border-bottom-right-radius: 150px;
 	float: right;
-	padding: 20px 40px 0px 0px;
+	padding: 30px 40px 0px 0px;
 	border-color: #fd9726;
 	border-left: none;
 	border-top: none;
@@ -217,6 +236,7 @@ input {
 /* custom columns starts */
 .leftCol {
 	border-right: 2px solid #a1b1bc;
+	padding: 10px 30px;
 }
 
 .rightCol {
