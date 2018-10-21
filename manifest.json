@@ -2,7 +2,7 @@
   "name": "RADD Dev Challenge",
   "short_name": "radd-dev",
   "lang": "en-US",
-  "start_url": "http://www.areaofeffect.co.za/radd/index.html",
+  "start_url": "/?utm_source=homescreen",
   "display": "browser",
   "orientation": "portrait",
   "background_color": "#01254b",
